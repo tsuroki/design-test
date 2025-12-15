@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="#">
-    <meta name="description" content="#">
+    <meta name="keywords" content="오늘의 날씨, 날씨">
+    <meta name="description" content="오늘의 날씨를 확인하세요.">
     <link rel="shortcut icon" href="./img/favi.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
     <title>오늘의 날씨</title>
     <script src="./scripts/weather.js" defer></script>
     <script src="./scripts/index.js" defer></script>
@@ -18,7 +18,7 @@
 <body>
     <main id="wrap" class="swiper city-swiper">
         <div class="swiper-wrapper city-wrapper">
-            <div class="swiper-slide city-slide1">
+            <section id="citySlide1" class="swiper-slide city-slide1">
                 <div class="day-content">
                     <div class="date">
                         <p>2025 . 12 . 15</p><p>월요일</p>
@@ -30,7 +30,7 @@
                 <div class="temperature">
                     <div class="city-contents">
                         <h2>서울특별시</h2>
-                        <h1><em>-6</em>°C</h1>
+                        <h1>-6°C</h1>
                     </div>
                     <div class="bodyfeel-temp">
                         <p><em>체감온도</em>-8.2°C</p>
@@ -123,8 +123,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="swiper-slide city-slide2">
+            </section>
+            <section id="citySlide2" class="swiper-slide city-slide2">
                 <div class="day-content">
                     <div class="date">
                         <p>2025 . 12 . 15</p><p>월요일</p>
@@ -136,7 +136,7 @@
                 <div class="temperature">
                     <div class="city-contents">
                         <h2>인천광역시</h2>
-                        <h1><em>-3</em>°C</h1>
+                        <h1>-3°C</h1>
                     </div>
                     <div class="bodyfeel-temp">
                         <p><em>체감온도</em>-4.1°C</p>
@@ -229,7 +229,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </main>
 </body>

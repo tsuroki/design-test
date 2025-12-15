@@ -26,6 +26,24 @@
   background: rgba(255, 255, 255, 0.8);
   z-index: 500;
 }
+#wrap .swiper-wrapper .city-slide2 {
+  position: relative;
+  z-index: 1;
+  background-image: url(../img/bg2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#wrap .swiper-wrapper .city-slide2::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 500;
+}
 #wrap .swiper-wrapper .swiper-slide {
   display: flex;
   flex-flow: column nowrap;
@@ -38,6 +56,14 @@
   z-index: 999;
 }
 #wrap .swiper-wrapper .swiper-slide .day-content .date {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+#wrap .swiper-wrapper .swiper-slide .day-content .today-time {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -59,14 +85,19 @@
   z-index: 999;
   gap: 20px;
 }
+#wrap .swiper-wrapper .swiper-slide .temperature .city-contents {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 #wrap .swiper-wrapper .swiper-slide .temperature .city-contents h2 {
   font-weight: 600;
   font-size: 1.125rem;
 }
 #wrap .swiper-wrapper .swiper-slide .temperature .city-contents h1 {
   font-size: 2.5rem;
-}
-#wrap .swiper-wrapper .swiper-slide .temperature .city-contents h1 em {
   font-weight: 600;
   color: #2C8CE8;
 }
